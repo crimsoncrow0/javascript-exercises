@@ -1,6 +1,12 @@
 const removeFromArray = function(a,x) {
-    let ind = a.indexOf(x);
-    a.splice(ind,1);
+    // Remove multiple values    
+    for (let i = 1; i < arguments.length; i++) {
+        let ind = a.indexOf(arguments[i]);
+        a.splice(ind,1);
+    }
+    // Ignore non present values
+    // Only removes same type
+    
     return a;
 };
 
