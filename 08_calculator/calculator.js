@@ -14,7 +14,7 @@ const sum = function(array) {
   return total;
 };
 
-const multiply = function() {
+const multiply = function(array) {
   let total = 1;
 	for (let i = 0; i < array.length; i++) {
     total *= array[i]
