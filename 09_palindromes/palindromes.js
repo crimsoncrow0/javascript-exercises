@@ -12,6 +12,8 @@ const palindromes = function (palindrome) {
     // remove characters and spaces
     text = text.replaceAll(' ','');
     text = text.replaceAll('!', '');
+    text = text.replaceAll(',', '');
+    text = text.replaceAll('.', '');
     let length = Math.round(text.length);
     let start = text.slice(0, Math.round(text.length / 2));
     let end = text.slice(Math.floor(text.length / 2) );
