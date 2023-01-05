@@ -10,9 +10,8 @@ const palindromes = function (palindrome) {
     //lowercase
     let text = palindrome.toLowerCase()
     // remove characters and spaces
-    text = text.replace('/ /g','');
-    text = text.replace('/!/g','');
-    text = text.replace('/,/g','');
+    text = text.replaceAll(' ','');
+    text = text.replaceAll('!', '');
     let length = Math.round(text.length);
     let start = text.slice(0, Math.round(text.length / 2));
     let end = text.slice(Math.floor(text.length / 2) );
